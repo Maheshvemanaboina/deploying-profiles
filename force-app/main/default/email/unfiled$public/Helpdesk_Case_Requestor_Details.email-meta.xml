@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Helpdesk Case Requestor Details</name>
+    <style>none</style>
+    <subject>Confirmation of Helpdesk Case Creation - Case Number#{!Case.CaseNumber}</subject>
+    <textOnly>Helpdesk Support
+
+Dear {!Case.Case_Requestor__c},
+
+Thank you for submitting the request to the HelpDesk Support Team. A case has been successfully created with the following details:
+
+Case Number: {!Case.CaseNumber}
+
+Priority: {!Case.Priority}
+
+Subject: {!Case.Subject}
+
+Business Unit: {!Case.Business_Unit__c}
+
+Business Segment: {!Case.Business_Segment__c}
+
+Support Type: {!Case.Support_Type__c}
+
+We appreciate your prompt action, and our team will address this case promptly.
+
+Best Regards,
+
+Helpdesk Support Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

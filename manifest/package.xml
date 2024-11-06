@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 	<types>
-		<members>Helpdesk_Case_Record_Page</members>
-		<name>FlexiPage</name>
+		<members>unfiled$public/Case_creation_notification_to_queue_members</members>
+		<members>unfiled$public/Helpdesk_Case_Requestor_Details</members>
+		<name>EmailTemplate</name>
 	</types>
 	<types>
 		<members>HelpDesk_Case_Creation_Flow</members>
 		<name>Flow</name>
+	</types>
+	<types>
+		<members>Case.Case_Details</members>
+		<members>Case.Case_creation_notification_to_helpdesk_queue_members</members>
+		<name>WorkflowAlert</name>
 	</types>
 	<version>60.0</version>
 </Package>

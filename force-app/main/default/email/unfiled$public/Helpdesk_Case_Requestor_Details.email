@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      .header {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        text-align: center;
+      }
+      .content {
+        padding: 20px;
+      }
+      .footer {
+        background-color: #f1f1f1;
+        padding: 10px;
+        text-align: center;
+      }
+      .case-details {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h2>Helpdesk Support</h2>
+    </div>
+    <div class="content">
+      <p>Dear {!Case.Case_Requestor__c},</p>  
+      </br>
+      <p>
+      Thank you for submitting the request to the HelpDesk Support Team. A case has been successfully created with the following details:
+      </p>
+      <div class="case-details">
+        <p><strong>Case Number: </strong><a href="{!Case.Link}">{!Case.CaseNumber}</a></p>
+        <p><strong>Priority:</strong> {!Case.Priority}</p>
+        <p><strong>Subject:</strong> {!Case.Subject}</p>
+        <p><strong>Business Unit:</strong> {!Case.Business_Unit__c}</p>
+        <p><strong>Business Segment:</strong> {!Case.Business_Segment_new_helpdesk__c}</p>
+        <p><strong>Support Type:</strong> {!Case.Support_Type__c}</p>
+      </div>
+      <p>We appreciate your prompt action, and our team will address this case promptly.</p>
+	  </br>
+      <p>Best Regards,</p>
+      <p>Helpdesk Support Team</p>
+    </div>
+  </body>
+</html>

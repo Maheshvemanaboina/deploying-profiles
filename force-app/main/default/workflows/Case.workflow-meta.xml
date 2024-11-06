@@ -7,7 +7,7 @@
         <recipients>
             <type>creator</type>
         </recipients>
-        <senderAddress>noreply-fc@frieslandcampina.com</senderAddress>
+        <senderAddress>maheshvemanaboina970@gmail.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Helpdesk_Case_Requestor_Details</template>
     </alerts>
@@ -19,7 +19,7 @@
             <recipient>Helpdesk_Queue_Members</recipient>
             <type>group</type>
         </recipients>
-        <senderAddress>support@frieslandcampina.com</senderAddress>
+        <senderAddress>maheshvemanaboina62@gmail.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Case_creation_notification_to_queue_members</template>
     </alerts>
